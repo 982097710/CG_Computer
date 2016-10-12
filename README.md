@@ -7,5 +7,8 @@
    
 更多的介绍：[了解更多](http://pages.ifrom.top/Blog)
 
+### 软件预览
+![软件截图](https://github.com/yaowenxu/CG_Computer/blob/master/images/shots.png)
+
 ---
 解释权归软件开发者所有。详情请寻找我的联系方式。
