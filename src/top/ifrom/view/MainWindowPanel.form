@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="top.ifrom.view.MainWindowPanel">
+  <grid id="27dc6" binding="AllPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="629" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="db382" binding="FunctionsPanel" layout-manager="GridLayoutManager" row-count="8" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="West"/>
+        <properties>
+          <toolTipText value="功能面板"/>
+        </properties>
+        <border type="etched" title="主控"/>
+        <children>
+          <component id="32ad9" class="javax.swing.JButton" binding="Buttion_func_1" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="直线"/>
+            </properties>
+          </component>
+          <vspacer id="dee47">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="9716a" class="javax.swing.JButton" binding="Buttion_func_2">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <hideActionText value="false"/>
+              <text value="Bresenham"/>
+              <toolTipText value="使用中点Bresenham的方法,来进行画直线。"/>
+            </properties>
+          </component>
+          <component id="5a346" class="javax.swing.JButton" binding="Button_func_3" custom-create="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="圆"/>
+              <toolTipText value="画圆"/>
+            </properties>
+          </component>
+          <component id="c2984" class="javax.swing.JButton" binding="Button_func_4">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="拓展"/>
+              <toolTipText value="拓展功能,进行开源共同开发"/>
+            </properties>
+          </component>
+          <component id="33450" class="javax.swing.JButton" binding="Button_func_5">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1250068"/>
+              <foreground color="-1088759"/>
+              <text value="清除数据"/>
+              <toolTipText value="清除主控界面上所有的点"/>
+            </properties>
+          </component>
+          <component id="83bc" class="javax.swing.JSpinner" binding="ColSpinner" custom-create="true">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <toolTipText value="设置网格密度"/>
+            </properties>
+          </component>
+          <component id="d8d81" class="javax.swing.JButton" binding="ConsoleSaveButton">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="保存日志"/>
+              <toolTipText value="保存控制台输出的内容"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="db38e" binding="StatusPanel" layout-manager="GridLayoutManager" row-count="1" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="South"/>
+        <properties>
+          <toolTipText value="状态栏区域"/>
+        </properties>
+        <border type="etched" title="状态"/>
+        <children>
+          <component id="ce89b" class="javax.swing.JLabel" binding="Status_Title">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="指针最近点坐标:"/>
+            </properties>
+          </component>
+          <hspacer id="ef0d2">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="7f3e7" class="javax.swing.JProgressBar" binding="Status_Progress" custom-create="true">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-6099176"/>
+              <stringPainted value="true"/>
+              <toolTipText value="操作处理进度条"/>
+              <value value="10"/>
+            </properties>
+          </component>
+          <component id="9c99" class="javax.swing.JLabel" binding="Status_Text" custom-create="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="坐标显示单元"/>
+            </properties>
+          </component>
+          <component id="7782d" class="javax.swing.JLabel" binding="Status_Title2">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="进度:"/>
+            </properties>
+          </component>
+          <component id="8586d" class="javax.swing.JLabel" binding="Status_Window_Stat" custom-create="true">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="运行中"/>
+              <toolTipText value="徐耀文-20144732-计算机科学与技术"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="7d959" binding="MainPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <toolTipText value="超级画板区域"/>
+        </properties>
+        <border type="bevel-lowered" title="主控界面">
+          <font/>
+          <title-color color="-16777216"/>
+        </border>
+        <children/>
+      </grid>
+      <grid id="989a6" binding="ConsolePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="East"/>
+        <properties>
+          <autoscrolls value="true"/>
+          <minimumSize width="300" height="-1"/>
+          <preferredSize width="250" height="88"/>
+          <visible value="true"/>
+        </properties>
+        <border type="bevel-lowered" title="控制台输出"/>
+        <children>
+          <grid id="3963a" binding="CommandPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="etched"/>
+            <children>
+              <component id="7734b" class="javax.swing.JButton" binding="CommandEnter">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="提交"/>
+                  <toolTipText value="提交命令行命令"/>
+                </properties>
+              </component>
+              <component id="fe1c2" class="javax.swing.JTextField" binding="CommandField" custom-create="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <toolTipText value="命令行"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
