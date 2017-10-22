@@ -4,8 +4,7 @@
 ## 计算机图形学
 
 通过Java Swing 框架，和Java AWT 框架实现图形界面程序，实现计算机图形学相关的算法，进行计算机图形学的配套学习。
-   
-更多的介绍：[了解更多](http://pages.ifrom.top/Blog)
+
 
 ### 软件预览
 ![软件截图](https://github.com/yaowenxu/CG_Computer/blob/master/images/shots.png)
