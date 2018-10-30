@@ -7,7 +7,6 @@
 
 
 ### 软件预览
-![软件截图]()
 
 https://github.com/yaowenxu/CG_Computer/blob/master/images/shots.png
 
